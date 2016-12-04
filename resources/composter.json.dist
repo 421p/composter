@@ -1,0 +1,10 @@
+{
+  "vendors_path" : "",
+  "packages" : {
+    "vendor/package" : {
+      "revision" : "master",
+      "path" : "",
+      "filename" : ""
+    }
+  }
+}
