@@ -19,4 +19,12 @@ copy_ex('index.php', 'phpmake/index.php');
 
 $phar->buildFromDirectory('phpmake');
 
+$phar->startBuffering();
+
+$stub = $phar->getStub();
+
+$phar->setStub('#!/usr/bin/env php'.PHP_EOL.$stub);
+
+$phar->stopBuffering();
+
 $phar->compressFiles(Phar::GZ);
